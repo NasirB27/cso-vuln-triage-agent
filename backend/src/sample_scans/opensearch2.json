@@ -1,0 +1,68 @@
+{
+  "imageName": "opensearch2",
+  "imageTag": "3.0.0",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/opensearch/opensearch2",
+  "baseOS": "RHEL 9 (UBI9)",
+  "lastScannedAt": "2026-09-03T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2023-11464",
+      "packageName": "systemd-libs",
+      "installedVersion": "3.5.1",
+      "fixedVersion": "3.5.6",
+      "cvssScore": 8.8,
+      "severity": "HIGH",
+      "description": "SQL injection in a legacy query path allows data exfiltration."
+    },
+    {
+      "cveId": "CVE-2025-34480",
+      "packageName": "jackson-databind",
+      "installedVersion": "2.7.8",
+      "fixedVersion": null,
+      "cvssScore": 7.5,
+      "severity": "HIGH",
+      "description": "Authentication bypass allows unauthorized access to protected endpoints."
+    },
+    {
+      "cveId": "CVE-2024-49795",
+      "packageName": "axios",
+      "installedVersion": "5.11.3",
+      "fixedVersion": "5.11.5",
+      "cvssScore": 6.8,
+      "severity": "MEDIUM",
+      "description": "Denial of service via crafted request causes excessive resource consumption."
+    },
+    {
+      "cveId": "CVE-2025-14692",
+      "packageName": "curl",
+      "installedVersion": "2.4.37",
+      "fixedVersion": null,
+      "cvssScore": 4.4,
+      "severity": "MEDIUM",
+      "description": "Insecure default configuration weakens transport-layer protections."
+    },
+    {
+      "cveId": "CVE-2022-17610",
+      "packageName": "gnutls",
+      "installedVersion": "2.7.1",
+      "fixedVersion": "2.7.6",
+      "cvssScore": 1.7,
+      "severity": "LOW",
+      "description": "Non-exploitable crash under unusual, attacker-uncontrolled conditions."
+    },
+    {
+      "cveId": "CVE-2022-35210",
+      "packageName": "bash",
+      "installedVersion": "1.9.31",
+      "fixedVersion": null,
+      "cvssScore": 1.7,
+      "severity": "LOW",
+      "description": "Minor information disclosure with limited practical impact."
+    }
+  ],
+  "overallSeverity": "HIGH",
+  "criticalCount": 0,
+  "highCount": 2,
+  "mediumCount": 2,
+  "lowCount": 2
+}

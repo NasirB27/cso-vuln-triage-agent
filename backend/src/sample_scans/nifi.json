@@ -1,0 +1,68 @@
+{
+  "imageName": "nifi",
+  "imageTag": "8.5.2",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/nifi/nifi",
+  "baseOS": "Debian 12 (bookworm-slim)",
+  "lastScannedAt": "2026-09-04T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2025-23042",
+      "packageName": "protobuf-java",
+      "installedVersion": "6.2.40",
+      "fixedVersion": "6.2.41",
+      "cvssScore": 9.4,
+      "severity": "CRITICAL",
+      "description": "Deserialization of untrusted data leads to arbitrary code execution."
+    },
+    {
+      "cveId": "CVE-2025-36115",
+      "packageName": "libxslt",
+      "installedVersion": "6.20.15",
+      "fixedVersion": "6.20.16",
+      "cvssScore": 9.2,
+      "severity": "CRITICAL",
+      "description": "Deserialization of untrusted data leads to arbitrary code execution."
+    },
+    {
+      "cveId": "CVE-2023-39967",
+      "packageName": "gzip",
+      "installedVersion": "5.17.8",
+      "fixedVersion": "5.17.11",
+      "cvssScore": 8.7,
+      "severity": "HIGH",
+      "description": "Out-of-bounds write may allow denial of service or code execution."
+    },
+    {
+      "cveId": "CVE-2025-35787",
+      "packageName": "glibc",
+      "installedVersion": "4.2.35",
+      "fixedVersion": "4.2.38",
+      "cvssScore": 8.7,
+      "severity": "HIGH",
+      "description": "Authentication bypass allows unauthorized access to protected endpoints."
+    },
+    {
+      "cveId": "CVE-2022-34617",
+      "packageName": "log4j-core",
+      "installedVersion": "4.20.18",
+      "fixedVersion": "4.20.20",
+      "cvssScore": 7.2,
+      "severity": "HIGH",
+      "description": "Improper certificate validation allows man-in-the-middle interception."
+    },
+    {
+      "cveId": "CVE-2024-48071",
+      "packageName": "gzip",
+      "installedVersion": "4.0.38",
+      "fixedVersion": "4.0.41",
+      "cvssScore": 6.6,
+      "severity": "MEDIUM",
+      "description": "Improper input validation may allow limited data corruption."
+    }
+  ],
+  "overallSeverity": "CRITICAL",
+  "criticalCount": 2,
+  "highCount": 3,
+  "mediumCount": 1,
+  "lowCount": 0
+}

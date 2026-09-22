@@ -1,0 +1,50 @@
+{
+  "imageName": "go122",
+  "imageTag": "9.2.1",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/golang/go122",
+  "baseOS": "Distroless (static)",
+  "lastScannedAt": "2026-09-21T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2025-44781",
+      "packageName": "jackson-databind",
+      "installedVersion": "1.6.38",
+      "fixedVersion": null,
+      "cvssScore": 6.4,
+      "severity": "MEDIUM",
+      "description": "Improper input validation may allow limited data corruption."
+    },
+    {
+      "cveId": "CVE-2025-48432",
+      "packageName": "ncurses-libs",
+      "installedVersion": "2.18.31",
+      "fixedVersion": "2.18.34",
+      "cvssScore": 5.8,
+      "severity": "MEDIUM",
+      "description": "Insecure default configuration weakens transport-layer protections."
+    },
+    {
+      "cveId": "CVE-2023-39279",
+      "packageName": "nodejs",
+      "installedVersion": "1.8.26",
+      "fixedVersion": null,
+      "cvssScore": 4.9,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    },
+    {
+      "cveId": "CVE-2024-38595",
+      "packageName": "expat",
+      "installedVersion": "2.8.5",
+      "fixedVersion": "2.8.6",
+      "cvssScore": 4.1,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    }
+  ],
+  "overallSeverity": "MEDIUM",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 4,
+  "lowCount": 0
+}

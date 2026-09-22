@@ -1,0 +1,77 @@
+{
+  "imageName": "nats-server",
+  "imageTag": "3.0.0",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/nats/nats-server",
+  "baseOS": "RHEL 8 (UBI8-minimal)",
+  "lastScannedAt": "2026-09-18T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2022-47785",
+      "packageName": "libxslt",
+      "installedVersion": "6.3.6",
+      "fixedVersion": "6.3.8",
+      "cvssScore": 8.7,
+      "severity": "HIGH",
+      "description": "Improper certificate validation allows man-in-the-middle interception."
+    },
+    {
+      "cveId": "CVE-2022-33196",
+      "packageName": "libxslt",
+      "installedVersion": "2.4.33",
+      "fixedVersion": "2.4.34",
+      "cvssScore": 8.1,
+      "severity": "HIGH",
+      "description": "Authentication bypass allows unauthorized access to protected endpoints."
+    },
+    {
+      "cveId": "CVE-2022-51986",
+      "packageName": "curl",
+      "installedVersion": "4.7.19",
+      "fixedVersion": "4.7.20",
+      "cvssScore": 8,
+      "severity": "HIGH",
+      "description": "SQL injection in a legacy query path allows data exfiltration."
+    },
+    {
+      "cveId": "CVE-2025-41842",
+      "packageName": "systemd-libs",
+      "installedVersion": "9.9.14",
+      "fixedVersion": "9.9.16",
+      "cvssScore": 5.7,
+      "severity": "MEDIUM",
+      "description": "Denial of service via crafted request causes excessive resource consumption."
+    },
+    {
+      "cveId": "CVE-2022-25618",
+      "packageName": "zlib",
+      "installedVersion": "1.7.17",
+      "fixedVersion": null,
+      "cvssScore": 5.5,
+      "severity": "MEDIUM",
+      "description": "Denial of service via crafted request causes excessive resource consumption."
+    },
+    {
+      "cveId": "CVE-2022-49746",
+      "packageName": "ncurses-libs",
+      "installedVersion": "5.18.27",
+      "fixedVersion": "5.18.31",
+      "cvssScore": 4.8,
+      "severity": "MEDIUM",
+      "description": "Insecure default configuration weakens transport-layer protections."
+    },
+    {
+      "cveId": "CVE-2023-44994",
+      "packageName": "urllib3",
+      "installedVersion": "2.19.13",
+      "fixedVersion": "2.19.17",
+      "cvssScore": 0.9,
+      "severity": "LOW",
+      "description": "Minor information disclosure with limited practical impact."
+    }
+  ],
+  "overallSeverity": "HIGH",
+  "criticalCount": 0,
+  "highCount": 3,
+  "mediumCount": 3,
+  "lowCount": 1
+}

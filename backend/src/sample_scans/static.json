@@ -1,0 +1,50 @@
+{
+  "imageName": "static",
+  "imageTag": "2.1.3",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/distroless/static",
+  "baseOS": "Distroless (static)",
+  "lastScannedAt": "2026-09-17T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2025-21423",
+      "packageName": "jackson-databind",
+      "installedVersion": "1.19.23",
+      "fixedVersion": "1.19.24",
+      "cvssScore": 5.3,
+      "severity": "MEDIUM",
+      "description": "Improper input validation may allow limited data corruption."
+    },
+    {
+      "cveId": "CVE-2024-41778",
+      "packageName": "python3",
+      "installedVersion": "9.17.26",
+      "fixedVersion": "9.17.28",
+      "cvssScore": 3.6,
+      "severity": "LOW",
+      "description": "Verbose error message may reveal internal path information."
+    },
+    {
+      "cveId": "CVE-2023-20035",
+      "packageName": "libcurl",
+      "installedVersion": "1.9.19",
+      "fixedVersion": "1.9.23",
+      "cvssScore": 3.1,
+      "severity": "LOW",
+      "description": "Non-exploitable crash under unusual, attacker-uncontrolled conditions."
+    },
+    {
+      "cveId": "CVE-2025-36253",
+      "packageName": "openssh",
+      "installedVersion": "4.12.38",
+      "fixedVersion": null,
+      "cvssScore": 0.7,
+      "severity": "LOW",
+      "description": "Non-exploitable crash under unusual, attacker-uncontrolled conditions."
+    }
+  ],
+  "overallSeverity": "MEDIUM",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 1,
+  "lowCount": 3
+}

@@ -1,0 +1,32 @@
+{
+  "imageName": "vault",
+  "imageTag": "9.2.1",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/vault/vault",
+  "baseOS": "Alpine 3.19",
+  "lastScannedAt": "2026-09-10T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2023-50176",
+      "packageName": "glibc",
+      "installedVersion": "7.13.31",
+      "fixedVersion": "7.13.35",
+      "cvssScore": 6.7,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    },
+    {
+      "cveId": "CVE-2025-32290",
+      "packageName": "gnutls",
+      "installedVersion": "5.2.0",
+      "fixedVersion": "5.2.5",
+      "cvssScore": 6.4,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    }
+  ],
+  "overallSeverity": "MEDIUM",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 2,
+  "lowCount": 0
+}

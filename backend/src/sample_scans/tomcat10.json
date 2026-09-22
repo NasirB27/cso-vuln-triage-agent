@@ -1,0 +1,77 @@
+{
+  "imageName": "tomcat10",
+  "imageTag": "3.0.0",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/tomcat/tomcat10",
+  "baseOS": "RHEL 9 (UBI9)",
+  "lastScannedAt": "2026-09-11T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2024-29937",
+      "packageName": "busybox",
+      "installedVersion": "7.2.33",
+      "fixedVersion": "7.2.37",
+      "cvssScore": 7.8,
+      "severity": "HIGH",
+      "description": "Improper certificate validation allows man-in-the-middle interception."
+    },
+    {
+      "cveId": "CVE-2022-39951",
+      "packageName": "jackson-databind",
+      "installedVersion": "9.16.32",
+      "fixedVersion": "9.16.35",
+      "cvssScore": 7.3,
+      "severity": "HIGH",
+      "description": "Out-of-bounds write may allow denial of service or code execution."
+    },
+    {
+      "cveId": "CVE-2022-10532",
+      "packageName": "gnutls",
+      "installedVersion": "5.3.8",
+      "fixedVersion": "5.3.13",
+      "cvssScore": 6.4,
+      "severity": "MEDIUM",
+      "description": "Improper input validation may allow limited data corruption."
+    },
+    {
+      "cveId": "CVE-2023-51431",
+      "packageName": "systemd-libs",
+      "installedVersion": "8.15.3",
+      "fixedVersion": "8.15.8",
+      "cvssScore": 5.8,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    },
+    {
+      "cveId": "CVE-2022-19864",
+      "packageName": "coreutils",
+      "installedVersion": "9.5.20",
+      "fixedVersion": "9.5.23",
+      "cvssScore": 5.6,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    },
+    {
+      "cveId": "CVE-2025-28503",
+      "packageName": "gzip",
+      "installedVersion": "8.11.6",
+      "fixedVersion": "8.11.9",
+      "cvssScore": 1.9,
+      "severity": "LOW",
+      "description": "Deprecated cryptographic primitive still accepted as a fallback."
+    },
+    {
+      "cveId": "CVE-2023-27253",
+      "packageName": "ncurses-libs",
+      "installedVersion": "8.16.14",
+      "fixedVersion": "8.16.19",
+      "cvssScore": 1.4,
+      "severity": "LOW",
+      "description": "Deprecated cryptographic primitive still accepted as a fallback."
+    }
+  ],
+  "overallSeverity": "HIGH",
+  "criticalCount": 0,
+  "highCount": 2,
+  "mediumCount": 3,
+  "lowCount": 2
+}

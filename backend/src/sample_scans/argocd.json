@@ -1,0 +1,13 @@
+{
+  "imageName": "argocd",
+  "imageTag": "2.1.3",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/argoproj/argocd",
+  "baseOS": "Distroless (static)",
+  "lastScannedAt": "2026-09-19T12:17:14.553Z",
+  "findings": [],
+  "overallSeverity": "LOW",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 0,
+  "lowCount": 0
+}

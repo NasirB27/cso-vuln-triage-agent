@@ -1,0 +1,41 @@
+{
+  "imageName": "sonarqube",
+  "imageTag": "3.0.0",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/sonarqube/sonarqube",
+  "baseOS": "Distroless (static)",
+  "lastScannedAt": "2026-09-02T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2022-13041",
+      "packageName": "axios",
+      "installedVersion": "1.0.25",
+      "fixedVersion": "1.0.30",
+      "cvssScore": 2.1,
+      "severity": "LOW",
+      "description": "Minor information disclosure with limited practical impact."
+    },
+    {
+      "cveId": "CVE-2025-49359",
+      "packageName": "urllib3",
+      "installedVersion": "2.2.9",
+      "fixedVersion": "2.2.14",
+      "cvssScore": 1.3,
+      "severity": "LOW",
+      "description": "Non-exploitable crash under unusual, attacker-uncontrolled conditions."
+    },
+    {
+      "cveId": "CVE-2024-10799",
+      "packageName": "glibc",
+      "installedVersion": "9.13.0",
+      "fixedVersion": "9.13.1",
+      "cvssScore": 1.1,
+      "severity": "LOW",
+      "description": "Minor information disclosure with limited practical impact."
+    }
+  ],
+  "overallSeverity": "LOW",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 0,
+  "lowCount": 3
+}

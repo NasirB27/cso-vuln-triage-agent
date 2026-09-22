@@ -1,0 +1,32 @@
+{
+  "imageName": "gitlab-runner",
+  "imageTag": "3.0.0",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/gitlab/gitlab-runner",
+  "baseOS": "Alpine 3.19",
+  "lastScannedAt": "2026-09-12T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2022-21572",
+      "packageName": "busybox",
+      "installedVersion": "4.17.21",
+      "fixedVersion": null,
+      "cvssScore": 5.3,
+      "severity": "MEDIUM",
+      "description": "Insecure default configuration weakens transport-layer protections."
+    },
+    {
+      "cveId": "CVE-2024-12000",
+      "packageName": "nodejs",
+      "installedVersion": "1.19.40",
+      "fixedVersion": "1.19.44",
+      "cvssScore": 1.7,
+      "severity": "LOW",
+      "description": "Non-exploitable crash under unusual, attacker-uncontrolled conditions."
+    }
+  ],
+  "overallSeverity": "MEDIUM",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 1,
+  "lowCount": 1
+}

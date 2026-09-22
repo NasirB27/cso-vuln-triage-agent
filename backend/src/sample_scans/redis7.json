@@ -1,0 +1,77 @@
+{
+  "imageName": "redis7",
+  "imageTag": "3.0.0",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/redis/redis7",
+  "baseOS": "RHEL 8 (UBI8-minimal)",
+  "lastScannedAt": "2026-09-16T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2024-35928",
+      "packageName": "sqlite",
+      "installedVersion": "9.2.17",
+      "fixedVersion": "9.2.21",
+      "cvssScore": 8.6,
+      "severity": "HIGH",
+      "description": "Improper certificate validation allows man-in-the-middle interception."
+    },
+    {
+      "cveId": "CVE-2022-46431",
+      "packageName": "tar",
+      "installedVersion": "3.2.22",
+      "fixedVersion": "3.2.24",
+      "cvssScore": 7.4,
+      "severity": "HIGH",
+      "description": "SQL injection in a legacy query path allows data exfiltration."
+    },
+    {
+      "cveId": "CVE-2022-17592",
+      "packageName": "systemd-libs",
+      "installedVersion": "9.9.34",
+      "fixedVersion": "9.9.35",
+      "cvssScore": 7.4,
+      "severity": "HIGH",
+      "description": "SQL injection in a legacy query path allows data exfiltration."
+    },
+    {
+      "cveId": "CVE-2024-44444",
+      "packageName": "systemd-libs",
+      "installedVersion": "7.12.37",
+      "fixedVersion": "7.12.41",
+      "cvssScore": 5.4,
+      "severity": "MEDIUM",
+      "description": "Denial of service via crafted request causes excessive resource consumption."
+    },
+    {
+      "cveId": "CVE-2024-15269",
+      "packageName": "lodash",
+      "installedVersion": "5.4.38",
+      "fixedVersion": "5.4.40",
+      "cvssScore": 3.9,
+      "severity": "LOW",
+      "description": "Minor information disclosure with limited practical impact."
+    },
+    {
+      "cveId": "CVE-2025-19059",
+      "packageName": "sqlite",
+      "installedVersion": "9.14.26",
+      "fixedVersion": "9.14.27",
+      "cvssScore": 2.4,
+      "severity": "LOW",
+      "description": "Deprecated cryptographic primitive still accepted as a fallback."
+    },
+    {
+      "cveId": "CVE-2022-22064",
+      "packageName": "urllib3",
+      "installedVersion": "4.12.35",
+      "fixedVersion": null,
+      "cvssScore": 1.2,
+      "severity": "LOW",
+      "description": "Non-exploitable crash under unusual, attacker-uncontrolled conditions."
+    }
+  ],
+  "overallSeverity": "HIGH",
+  "criticalCount": 0,
+  "highCount": 3,
+  "mediumCount": 1,
+  "lowCount": 3
+}

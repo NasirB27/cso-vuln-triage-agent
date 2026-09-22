@@ -1,0 +1,59 @@
+{
+  "imageName": "mongodb6",
+  "imageTag": "3.0.0",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/mongodb/mongodb6",
+  "baseOS": "Debian 12 (bookworm-slim)",
+  "lastScannedAt": "2026-09-04T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2024-47949",
+      "packageName": "bash",
+      "installedVersion": "3.15.14",
+      "fixedVersion": "3.15.19",
+      "cvssScore": 9.3,
+      "severity": "CRITICAL",
+      "description": "Deserialization of untrusted data leads to arbitrary code execution."
+    },
+    {
+      "cveId": "CVE-2025-30939",
+      "packageName": "glibc",
+      "installedVersion": "2.19.7",
+      "fixedVersion": null,
+      "cvssScore": 8.8,
+      "severity": "HIGH",
+      "description": "Out-of-bounds write may allow denial of service or code execution."
+    },
+    {
+      "cveId": "CVE-2022-34829",
+      "packageName": "sqlite",
+      "installedVersion": "6.7.9",
+      "fixedVersion": "6.7.13",
+      "cvssScore": 7.3,
+      "severity": "HIGH",
+      "description": "Out-of-bounds write may allow denial of service or code execution."
+    },
+    {
+      "cveId": "CVE-2022-23465",
+      "packageName": "openssh",
+      "installedVersion": "5.17.12",
+      "fixedVersion": "5.17.15",
+      "cvssScore": 6.1,
+      "severity": "MEDIUM",
+      "description": "Improper input validation may allow limited data corruption."
+    },
+    {
+      "cveId": "CVE-2023-19560",
+      "packageName": "gzip",
+      "installedVersion": "5.4.1",
+      "fixedVersion": "5.4.4",
+      "cvssScore": 5,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    }
+  ],
+  "overallSeverity": "CRITICAL",
+  "criticalCount": 1,
+  "highCount": 2,
+  "mediumCount": 2,
+  "lowCount": 0
+}

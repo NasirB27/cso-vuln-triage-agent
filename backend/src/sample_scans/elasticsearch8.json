@@ -1,0 +1,13 @@
+{
+  "imageName": "elasticsearch8",
+  "imageTag": "latest",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/elastic/elasticsearch8",
+  "baseOS": "RHEL 8 (UBI8-minimal)",
+  "lastScannedAt": "2026-09-02T12:17:14.553Z",
+  "findings": [],
+  "overallSeverity": "LOW",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 0,
+  "lowCount": 0
+}

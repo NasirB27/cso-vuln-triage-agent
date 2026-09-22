@@ -1,0 +1,59 @@
+{
+  "imageName": "openjdk17",
+  "imageTag": "latest",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/openjdk/openjdk17",
+  "baseOS": "Alpine 3.19",
+  "lastScannedAt": "2026-09-12T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2025-40686",
+      "packageName": "libxml2",
+      "installedVersion": "4.1.22",
+      "fixedVersion": "4.1.27",
+      "cvssScore": 7.9,
+      "severity": "HIGH",
+      "description": "Authentication bypass allows unauthorized access to protected endpoints."
+    },
+    {
+      "cveId": "CVE-2024-36930",
+      "packageName": "bash",
+      "installedVersion": "7.12.5",
+      "fixedVersion": null,
+      "cvssScore": 5.9,
+      "severity": "MEDIUM",
+      "description": "Improper input validation may allow limited data corruption."
+    },
+    {
+      "cveId": "CVE-2024-26047",
+      "packageName": "busybox",
+      "installedVersion": "9.4.5",
+      "fixedVersion": "9.4.10",
+      "cvssScore": 5.4,
+      "severity": "MEDIUM",
+      "description": "Improper input validation may allow limited data corruption."
+    },
+    {
+      "cveId": "CVE-2022-51544",
+      "packageName": "lodash",
+      "installedVersion": "9.13.14",
+      "fixedVersion": "9.13.19",
+      "cvssScore": 4.5,
+      "severity": "MEDIUM",
+      "description": "Denial of service via crafted request causes excessive resource consumption."
+    },
+    {
+      "cveId": "CVE-2025-42149",
+      "packageName": "nodejs",
+      "installedVersion": "4.15.17",
+      "fixedVersion": null,
+      "cvssScore": 3.4,
+      "severity": "LOW",
+      "description": "Non-exploitable crash under unusual, attacker-uncontrolled conditions."
+    }
+  ],
+  "overallSeverity": "HIGH",
+  "criticalCount": 0,
+  "highCount": 1,
+  "mediumCount": 3,
+  "lowCount": 1
+}

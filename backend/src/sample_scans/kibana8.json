@@ -1,0 +1,41 @@
+{
+  "imageName": "kibana8",
+  "imageTag": "2.1.3",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/kibana/kibana8",
+  "baseOS": "Debian 12 (bookworm-slim)",
+  "lastScannedAt": "2026-09-12T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2022-23844",
+      "packageName": "libxslt",
+      "installedVersion": "1.12.29",
+      "fixedVersion": "1.12.30",
+      "cvssScore": 8.6,
+      "severity": "HIGH",
+      "description": "Out-of-bounds write may allow denial of service or code execution."
+    },
+    {
+      "cveId": "CVE-2024-41640",
+      "packageName": "krb5-libs",
+      "installedVersion": "5.2.22",
+      "fixedVersion": "5.2.26",
+      "cvssScore": 5.4,
+      "severity": "MEDIUM",
+      "description": "Insecure default configuration weakens transport-layer protections."
+    },
+    {
+      "cveId": "CVE-2022-33940",
+      "packageName": "libcurl",
+      "installedVersion": "6.12.40",
+      "fixedVersion": "6.12.44",
+      "cvssScore": 1.2,
+      "severity": "LOW",
+      "description": "Verbose error message may reveal internal path information."
+    }
+  ],
+  "overallSeverity": "HIGH",
+  "criticalCount": 0,
+  "highCount": 1,
+  "mediumCount": 1,
+  "lowCount": 1
+}

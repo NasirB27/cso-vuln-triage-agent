@@ -1,0 +1,50 @@
+{
+  "imageName": "node20",
+  "imageTag": "2.1.3",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/nodejs/node20",
+  "baseOS": "Alpine 3.19",
+  "lastScannedAt": "2026-09-14T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2022-40672",
+      "packageName": "coreutils",
+      "installedVersion": "2.11.31",
+      "fixedVersion": "2.11.35",
+      "cvssScore": 9.8,
+      "severity": "CRITICAL",
+      "description": "Unauthenticated privilege escalation permits root-level command execution."
+    },
+    {
+      "cveId": "CVE-2023-20819",
+      "packageName": "urllib3",
+      "installedVersion": "6.16.13",
+      "fixedVersion": "6.16.15",
+      "cvssScore": 9.1,
+      "severity": "CRITICAL",
+      "description": "Buffer overflow in the network-facing parser allows remote code execution."
+    },
+    {
+      "cveId": "CVE-2023-50498",
+      "packageName": "sqlite",
+      "installedVersion": "9.9.15",
+      "fixedVersion": "9.9.18",
+      "cvssScore": 8.4,
+      "severity": "HIGH",
+      "description": "Authentication bypass allows unauthorized access to protected endpoints."
+    },
+    {
+      "cveId": "CVE-2022-41183",
+      "packageName": "openssh",
+      "installedVersion": "6.2.1",
+      "fixedVersion": "6.2.6",
+      "cvssScore": 4.7,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    }
+  ],
+  "overallSeverity": "CRITICAL",
+  "criticalCount": 2,
+  "highCount": 1,
+  "mediumCount": 1,
+  "lowCount": 0
+}

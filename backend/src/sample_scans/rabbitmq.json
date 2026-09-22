@@ -1,0 +1,59 @@
+{
+  "imageName": "rabbitmq",
+  "imageTag": "3.0.0",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/rabbitmq/rabbitmq",
+  "baseOS": "RHEL 8 (UBI8-minimal)",
+  "lastScannedAt": "2026-09-17T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2024-50974",
+      "packageName": "log4j-core",
+      "installedVersion": "3.4.17",
+      "fixedVersion": null,
+      "cvssScore": 8.6,
+      "severity": "HIGH",
+      "description": "Out-of-bounds write may allow denial of service or code execution."
+    },
+    {
+      "cveId": "CVE-2025-49169",
+      "packageName": "jackson-databind",
+      "installedVersion": "7.6.40",
+      "fixedVersion": "7.6.42",
+      "cvssScore": 7.1,
+      "severity": "HIGH",
+      "description": "SQL injection in a legacy query path allows data exfiltration."
+    },
+    {
+      "cveId": "CVE-2025-14674",
+      "packageName": "protobuf-java",
+      "installedVersion": "8.15.29",
+      "fixedVersion": null,
+      "cvssScore": 5,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    },
+    {
+      "cveId": "CVE-2025-43282",
+      "packageName": "ncurses-libs",
+      "installedVersion": "2.4.40",
+      "fixedVersion": "2.4.42",
+      "cvssScore": 4.3,
+      "severity": "MEDIUM",
+      "description": "Denial of service via crafted request causes excessive resource consumption."
+    },
+    {
+      "cveId": "CVE-2022-19420",
+      "packageName": "bash",
+      "installedVersion": "4.9.16",
+      "fixedVersion": "4.9.17",
+      "cvssScore": 3.8,
+      "severity": "LOW",
+      "description": "Verbose error message may reveal internal path information."
+    }
+  ],
+  "overallSeverity": "HIGH",
+  "criticalCount": 0,
+  "highCount": 2,
+  "mediumCount": 2,
+  "lowCount": 1
+}

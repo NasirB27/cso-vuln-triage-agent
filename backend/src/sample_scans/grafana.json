@@ -1,0 +1,32 @@
+{
+  "imageName": "grafana",
+  "imageTag": "1.0.0",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/grafana/grafana",
+  "baseOS": "Debian 12 (bookworm-slim)",
+  "lastScannedAt": "2026-09-08T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2023-44830",
+      "packageName": "glibc",
+      "installedVersion": "9.0.24",
+      "fixedVersion": "9.0.27",
+      "cvssScore": 5.6,
+      "severity": "MEDIUM",
+      "description": "Improper input validation may allow limited data corruption."
+    },
+    {
+      "cveId": "CVE-2023-51019",
+      "packageName": "openssl",
+      "installedVersion": "7.0.28",
+      "fixedVersion": "7.0.30",
+      "cvssScore": 2.8,
+      "severity": "LOW",
+      "description": "Minor information disclosure with limited practical impact."
+    }
+  ],
+  "overallSeverity": "MEDIUM",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 1,
+  "lowCount": 1
+}

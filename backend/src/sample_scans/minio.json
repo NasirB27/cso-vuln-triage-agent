@@ -1,0 +1,32 @@
+{
+  "imageName": "minio",
+  "imageTag": "latest",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/minio/minio",
+  "baseOS": "Debian 12 (bookworm-slim)",
+  "lastScannedAt": "2026-09-15T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2024-30637",
+      "packageName": "libxml2",
+      "installedVersion": "1.16.39",
+      "fixedVersion": null,
+      "cvssScore": 6.6,
+      "severity": "MEDIUM",
+      "description": "Denial of service via crafted request causes excessive resource consumption."
+    },
+    {
+      "cveId": "CVE-2022-24598",
+      "packageName": "jackson-databind",
+      "installedVersion": "7.9.7",
+      "fixedVersion": "7.9.12",
+      "cvssScore": 3.4,
+      "severity": "LOW",
+      "description": "Minor information disclosure with limited practical impact."
+    }
+  ],
+  "overallSeverity": "MEDIUM",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 1,
+  "lowCount": 1
+}

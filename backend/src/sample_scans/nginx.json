@@ -1,0 +1,77 @@
+{
+  "imageName": "nginx",
+  "imageTag": "1.0.0",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/nginx/nginx",
+  "baseOS": "RHEL 9 (UBI9)",
+  "lastScannedAt": "2026-09-17T12:17:14.552Z",
+  "findings": [
+    {
+      "cveId": "CVE-2022-31122",
+      "packageName": "openssl",
+      "installedVersion": "2.4.6",
+      "fixedVersion": "2.4.9",
+      "cvssScore": 7.3,
+      "severity": "HIGH",
+      "description": "Out-of-bounds write may allow denial of service or code execution."
+    },
+    {
+      "cveId": "CVE-2023-32825",
+      "packageName": "netty-codec-http",
+      "installedVersion": "7.14.14",
+      "fixedVersion": "7.14.18",
+      "cvssScore": 7.2,
+      "severity": "HIGH",
+      "description": "Improper certificate validation allows man-in-the-middle interception."
+    },
+    {
+      "cveId": "CVE-2023-39511",
+      "packageName": "systemd-libs",
+      "installedVersion": "9.17.38",
+      "fixedVersion": "9.17.41",
+      "cvssScore": 6.7,
+      "severity": "MEDIUM",
+      "description": "Denial of service via crafted request causes excessive resource consumption."
+    },
+    {
+      "cveId": "CVE-2023-42976",
+      "packageName": "gzip",
+      "installedVersion": "7.6.3",
+      "fixedVersion": "7.6.5",
+      "cvssScore": 5.5,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    },
+    {
+      "cveId": "CVE-2023-49882",
+      "packageName": "libcurl",
+      "installedVersion": "1.1.9",
+      "fixedVersion": "1.1.12",
+      "cvssScore": 5.1,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    },
+    {
+      "cveId": "CVE-2025-46901",
+      "packageName": "python3",
+      "installedVersion": "9.14.15",
+      "fixedVersion": "9.14.18",
+      "cvssScore": 3.2,
+      "severity": "LOW",
+      "description": "Minor information disclosure with limited practical impact."
+    },
+    {
+      "cveId": "CVE-2022-16251",
+      "packageName": "axios",
+      "installedVersion": "5.17.24",
+      "fixedVersion": "5.17.25",
+      "cvssScore": 1.2,
+      "severity": "LOW",
+      "description": "Non-exploitable crash under unusual, attacker-uncontrolled conditions."
+    }
+  ],
+  "overallSeverity": "HIGH",
+  "criticalCount": 0,
+  "highCount": 2,
+  "mediumCount": 3,
+  "lowCount": 2
+}

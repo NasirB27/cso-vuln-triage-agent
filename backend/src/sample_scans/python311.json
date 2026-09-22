@@ -1,0 +1,13 @@
+{
+  "imageName": "python311",
+  "imageTag": "9.2.1",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/python/python311",
+  "baseOS": "Debian 12 (bookworm-slim)",
+  "lastScannedAt": "2026-09-20T12:17:14.553Z",
+  "findings": [],
+  "overallSeverity": "LOW",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 0,
+  "lowCount": 0
+}

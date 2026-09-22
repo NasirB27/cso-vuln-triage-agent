@@ -1,0 +1,41 @@
+{
+  "imageName": "alpine",
+  "imageTag": "9.2.1",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/alpine/alpine",
+  "baseOS": "Debian 12 (bookworm-slim)",
+  "lastScannedAt": "2026-09-17T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2024-39934",
+      "packageName": "libxslt",
+      "installedVersion": "8.4.19",
+      "fixedVersion": "8.4.23",
+      "cvssScore": 6.7,
+      "severity": "MEDIUM",
+      "description": "Denial of service via crafted request causes excessive resource consumption."
+    },
+    {
+      "cveId": "CVE-2025-42855",
+      "packageName": "bash",
+      "installedVersion": "9.9.21",
+      "fixedVersion": "9.9.24",
+      "cvssScore": 3.4,
+      "severity": "LOW",
+      "description": "Non-exploitable crash under unusual, attacker-uncontrolled conditions."
+    },
+    {
+      "cveId": "CVE-2023-48987",
+      "packageName": "ncurses-libs",
+      "installedVersion": "2.15.36",
+      "fixedVersion": "2.15.37",
+      "cvssScore": 1.4,
+      "severity": "LOW",
+      "description": "Non-exploitable crash under unusual, attacker-uncontrolled conditions."
+    }
+  ],
+  "overallSeverity": "MEDIUM",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 1,
+  "lowCount": 2
+}

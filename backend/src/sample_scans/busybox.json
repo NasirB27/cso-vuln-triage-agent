@@ -1,0 +1,50 @@
+{
+  "imageName": "busybox",
+  "imageTag": "8.5.2",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/busybox/busybox",
+  "baseOS": "Debian 12 (bookworm-slim)",
+  "lastScannedAt": "2026-09-20T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2024-32786",
+      "packageName": "gnutls",
+      "installedVersion": "7.12.14",
+      "fixedVersion": null,
+      "cvssScore": 8.1,
+      "severity": "HIGH",
+      "description": "Improper certificate validation allows man-in-the-middle interception."
+    },
+    {
+      "cveId": "CVE-2022-33475",
+      "packageName": "systemd-libs",
+      "installedVersion": "5.13.26",
+      "fixedVersion": "5.13.30",
+      "cvssScore": 5.7,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    },
+    {
+      "cveId": "CVE-2023-46869",
+      "packageName": "coreutils",
+      "installedVersion": "1.6.0",
+      "fixedVersion": "1.6.1",
+      "cvssScore": 3.6,
+      "severity": "LOW",
+      "description": "Minor information disclosure with limited practical impact."
+    },
+    {
+      "cveId": "CVE-2022-25403",
+      "packageName": "pcre2",
+      "installedVersion": "7.5.30",
+      "fixedVersion": "7.5.34",
+      "cvssScore": 3.3,
+      "severity": "LOW",
+      "description": "Deprecated cryptographic primitive still accepted as a fallback."
+    }
+  ],
+  "overallSeverity": "HIGH",
+  "criticalCount": 0,
+  "highCount": 1,
+  "mediumCount": 1,
+  "lowCount": 2
+}

@@ -1,0 +1,104 @@
+{
+  "imageName": "jenkins",
+  "imageTag": "2.1.3",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/jenkins/jenkins",
+  "baseOS": "Debian 12 (bookworm-slim)",
+  "lastScannedAt": "2026-09-20T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2022-34484",
+      "packageName": "coreutils",
+      "installedVersion": "4.1.12",
+      "fixedVersion": "4.1.14",
+      "cvssScore": 10,
+      "severity": "CRITICAL",
+      "description": "Remote code execution via crafted input allows full container compromise."
+    },
+    {
+      "cveId": "CVE-2023-48904",
+      "packageName": "nodejs",
+      "installedVersion": "8.8.2",
+      "fixedVersion": null,
+      "cvssScore": 9.9,
+      "severity": "CRITICAL",
+      "description": "Deserialization of untrusted data leads to arbitrary code execution."
+    },
+    {
+      "cveId": "CVE-2025-12983",
+      "packageName": "netty-codec-http",
+      "installedVersion": "5.19.4",
+      "fixedVersion": "5.19.6",
+      "cvssScore": 9.1,
+      "severity": "CRITICAL",
+      "description": "Buffer overflow in the network-facing parser allows remote code execution."
+    },
+    {
+      "cveId": "CVE-2025-51441",
+      "packageName": "busybox",
+      "installedVersion": "5.11.5",
+      "fixedVersion": "5.11.7",
+      "cvssScore": 7.8,
+      "severity": "HIGH",
+      "description": "Improper certificate validation allows man-in-the-middle interception."
+    },
+    {
+      "cveId": "CVE-2025-12115",
+      "packageName": "gnutls",
+      "installedVersion": "3.6.1",
+      "fixedVersion": "3.6.2",
+      "cvssScore": 6.3,
+      "severity": "MEDIUM",
+      "description": "Insecure default configuration weakens transport-layer protections."
+    },
+    {
+      "cveId": "CVE-2025-41962",
+      "packageName": "protobuf-java",
+      "installedVersion": "4.2.37",
+      "fixedVersion": null,
+      "cvssScore": 6.3,
+      "severity": "MEDIUM",
+      "description": "Denial of service via crafted request causes excessive resource consumption."
+    },
+    {
+      "cveId": "CVE-2023-45628",
+      "packageName": "ncurses-libs",
+      "installedVersion": "4.7.0",
+      "fixedVersion": "4.7.1",
+      "cvssScore": 6.1,
+      "severity": "MEDIUM",
+      "description": "Denial of service via crafted request causes excessive resource consumption."
+    },
+    {
+      "cveId": "CVE-2024-16810",
+      "packageName": "jackson-databind",
+      "installedVersion": "7.11.38",
+      "fixedVersion": "7.11.43",
+      "cvssScore": 6,
+      "severity": "MEDIUM",
+      "description": "Denial of service via crafted request causes excessive resource consumption."
+    },
+    {
+      "cveId": "CVE-2024-25642",
+      "packageName": "coreutils",
+      "installedVersion": "1.9.20",
+      "fixedVersion": "1.9.24",
+      "cvssScore": 5.4,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    },
+    {
+      "cveId": "CVE-2022-44085",
+      "packageName": "glibc",
+      "installedVersion": "8.17.15",
+      "fixedVersion": "8.17.20",
+      "cvssScore": 4.1,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    }
+  ],
+  "overallSeverity": "CRITICAL",
+  "criticalCount": 3,
+  "highCount": 1,
+  "mediumCount": 6,
+  "lowCount": 0
+}

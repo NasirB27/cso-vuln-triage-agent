@@ -1,0 +1,41 @@
+{
+  "imageName": "influxdb2",
+  "imageTag": "2.1.3",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/influxdb/influxdb2",
+  "baseOS": "RHEL 8 (UBI8-minimal)",
+  "lastScannedAt": "2026-09-17T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2022-13224",
+      "packageName": "urllib3",
+      "installedVersion": "4.14.30",
+      "fixedVersion": "4.14.34",
+      "cvssScore": 6.4,
+      "severity": "MEDIUM",
+      "description": "Denial of service via crafted request causes excessive resource consumption."
+    },
+    {
+      "cveId": "CVE-2024-41484",
+      "packageName": "requests",
+      "installedVersion": "2.19.5",
+      "fixedVersion": null,
+      "cvssScore": 4.9,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    },
+    {
+      "cveId": "CVE-2024-21726",
+      "packageName": "spring-core",
+      "installedVersion": "1.20.7",
+      "fixedVersion": "1.20.12",
+      "cvssScore": 3,
+      "severity": "LOW",
+      "description": "Deprecated cryptographic primitive still accepted as a fallback."
+    }
+  ],
+  "overallSeverity": "MEDIUM",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 2,
+  "lowCount": 1
+}

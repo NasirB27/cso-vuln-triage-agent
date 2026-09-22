@@ -1,0 +1,13 @@
+{
+  "imageName": "proxyv2",
+  "imageTag": "8.5.2",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/istio/proxyv2",
+  "baseOS": "Alpine 3.19",
+  "lastScannedAt": "2026-09-20T12:17:14.553Z",
+  "findings": [],
+  "overallSeverity": "LOW",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 0,
+  "lowCount": 0
+}

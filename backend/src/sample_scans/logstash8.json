@@ -1,0 +1,50 @@
+{
+  "imageName": "logstash8",
+  "imageTag": "latest",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/logstash/logstash8",
+  "baseOS": "RHEL 8 (UBI8-minimal)",
+  "lastScannedAt": "2026-09-11T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2022-48863",
+      "packageName": "axios",
+      "installedVersion": "5.5.28",
+      "fixedVersion": null,
+      "cvssScore": 6.7,
+      "severity": "MEDIUM",
+      "description": "Improper input validation may allow limited data corruption."
+    },
+    {
+      "cveId": "CVE-2025-14815",
+      "packageName": "expat",
+      "installedVersion": "5.16.24",
+      "fixedVersion": "5.16.29",
+      "cvssScore": 5.9,
+      "severity": "MEDIUM",
+      "description": "Improper input validation may allow limited data corruption."
+    },
+    {
+      "cveId": "CVE-2025-34380",
+      "packageName": "curl",
+      "installedVersion": "9.15.11",
+      "fixedVersion": "9.15.13",
+      "cvssScore": 4.1,
+      "severity": "MEDIUM",
+      "description": "Improper input validation may allow limited data corruption."
+    },
+    {
+      "cveId": "CVE-2023-50445",
+      "packageName": "coreutils",
+      "installedVersion": "2.19.4",
+      "fixedVersion": "2.19.7",
+      "cvssScore": 0.7,
+      "severity": "LOW",
+      "description": "Minor information disclosure with limited practical impact."
+    }
+  ],
+  "overallSeverity": "MEDIUM",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 3,
+  "lowCount": 1
+}

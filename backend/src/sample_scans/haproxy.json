@@ -1,0 +1,68 @@
+{
+  "imageName": "haproxy",
+  "imageTag": "3.0.0",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/haproxy/haproxy",
+  "baseOS": "RHEL 8 (UBI8-minimal)",
+  "lastScannedAt": "2026-09-20T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2025-45177",
+      "packageName": "coreutils",
+      "installedVersion": "1.9.23",
+      "fixedVersion": "1.9.25",
+      "cvssScore": 8.8,
+      "severity": "HIGH",
+      "description": "Improper certificate validation allows man-in-the-middle interception."
+    },
+    {
+      "cveId": "CVE-2022-42204",
+      "packageName": "openssh",
+      "installedVersion": "8.4.0",
+      "fixedVersion": "8.4.2",
+      "cvssScore": 8.6,
+      "severity": "HIGH",
+      "description": "Improper certificate validation allows man-in-the-middle interception."
+    },
+    {
+      "cveId": "CVE-2023-13320",
+      "packageName": "busybox",
+      "installedVersion": "3.6.35",
+      "fixedVersion": "3.6.36",
+      "cvssScore": 7.5,
+      "severity": "HIGH",
+      "description": "Out-of-bounds write may allow denial of service or code execution."
+    },
+    {
+      "cveId": "CVE-2025-46704",
+      "packageName": "systemd-libs",
+      "installedVersion": "8.7.32",
+      "fixedVersion": "8.7.33",
+      "cvssScore": 5.5,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    },
+    {
+      "cveId": "CVE-2023-17144",
+      "packageName": "gzip",
+      "installedVersion": "2.5.19",
+      "fixedVersion": "2.5.21",
+      "cvssScore": 1.6,
+      "severity": "LOW",
+      "description": "Non-exploitable crash under unusual, attacker-uncontrolled conditions."
+    },
+    {
+      "cveId": "CVE-2025-39746",
+      "packageName": "bash",
+      "installedVersion": "9.5.19",
+      "fixedVersion": "9.5.24",
+      "cvssScore": 0.6,
+      "severity": "LOW",
+      "description": "Non-exploitable crash under unusual, attacker-uncontrolled conditions."
+    }
+  ],
+  "overallSeverity": "HIGH",
+  "criticalCount": 0,
+  "highCount": 3,
+  "mediumCount": 1,
+  "lowCount": 2
+}

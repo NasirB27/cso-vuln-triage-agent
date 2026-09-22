@@ -1,0 +1,77 @@
+{
+  "imageName": "ubi8-minimal",
+  "imageTag": "3.0.0",
+  "registryPath": "registry1.dso.mil/ironbank/redhat/ubi/ubi8-minimal",
+  "baseOS": "RHEL 9 (UBI9)",
+  "lastScannedAt": "2026-09-08T12:17:14.552Z",
+  "findings": [
+    {
+      "cveId": "CVE-2023-51404",
+      "packageName": "bash",
+      "installedVersion": "4.7.8",
+      "fixedVersion": null,
+      "cvssScore": 8.3,
+      "severity": "HIGH",
+      "description": "Authentication bypass allows unauthorized access to protected endpoints."
+    },
+    {
+      "cveId": "CVE-2023-47760",
+      "packageName": "libxslt",
+      "installedVersion": "9.2.33",
+      "fixedVersion": "9.2.36",
+      "cvssScore": 8,
+      "severity": "HIGH",
+      "description": "Authentication bypass allows unauthorized access to protected endpoints."
+    },
+    {
+      "cveId": "CVE-2023-35525",
+      "packageName": "python3",
+      "installedVersion": "3.12.24",
+      "fixedVersion": "3.12.29",
+      "cvssScore": 7.6,
+      "severity": "HIGH",
+      "description": "Out-of-bounds write may allow denial of service or code execution."
+    },
+    {
+      "cveId": "CVE-2023-32639",
+      "packageName": "libxslt",
+      "installedVersion": "6.13.21",
+      "fixedVersion": "6.13.25",
+      "cvssScore": 7.6,
+      "severity": "HIGH",
+      "description": "Out-of-bounds write may allow denial of service or code execution."
+    },
+    {
+      "cveId": "CVE-2023-22861",
+      "packageName": "protobuf-java",
+      "installedVersion": "5.5.28",
+      "fixedVersion": null,
+      "cvssScore": 5.6,
+      "severity": "MEDIUM",
+      "description": "Denial of service via crafted request causes excessive resource consumption."
+    },
+    {
+      "cveId": "CVE-2024-17891",
+      "packageName": "libxslt",
+      "installedVersion": "5.4.23",
+      "fixedVersion": "5.4.25",
+      "cvssScore": 1.9,
+      "severity": "LOW",
+      "description": "Minor information disclosure with limited practical impact."
+    },
+    {
+      "cveId": "CVE-2024-50420",
+      "packageName": "libxml2",
+      "installedVersion": "7.19.0",
+      "fixedVersion": "7.19.5",
+      "cvssScore": 1.6,
+      "severity": "LOW",
+      "description": "Deprecated cryptographic primitive still accepted as a fallback."
+    }
+  ],
+  "overallSeverity": "HIGH",
+  "criticalCount": 0,
+  "highCount": 4,
+  "mediumCount": 1,
+  "lowCount": 2
+}

@@ -1,0 +1,86 @@
+{
+  "imageName": "prometheus",
+  "imageTag": "8.5.2",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/prometheus/prometheus",
+  "baseOS": "RHEL 9 (UBI9)",
+  "lastScannedAt": "2026-09-18T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2022-28677",
+      "packageName": "urllib3",
+      "installedVersion": "7.20.22",
+      "fixedVersion": null,
+      "cvssScore": 9.6,
+      "severity": "CRITICAL",
+      "description": "Remote code execution via crafted input allows full container compromise."
+    },
+    {
+      "cveId": "CVE-2025-41766",
+      "packageName": "lodash",
+      "installedVersion": "4.10.31",
+      "fixedVersion": "4.10.33",
+      "cvssScore": 9.4,
+      "severity": "CRITICAL",
+      "description": "Unauthenticated privilege escalation permits root-level command execution."
+    },
+    {
+      "cveId": "CVE-2024-48505",
+      "packageName": "ncurses-libs",
+      "installedVersion": "4.19.28",
+      "fixedVersion": "4.19.33",
+      "cvssScore": 9.4,
+      "severity": "CRITICAL",
+      "description": "Remote code execution via crafted input allows full container compromise."
+    },
+    {
+      "cveId": "CVE-2023-42017",
+      "packageName": "openssl",
+      "installedVersion": "8.2.35",
+      "fixedVersion": "8.2.40",
+      "cvssScore": 9.4,
+      "severity": "CRITICAL",
+      "description": "Unauthenticated privilege escalation permits root-level command execution."
+    },
+    {
+      "cveId": "CVE-2025-42785",
+      "packageName": "expat",
+      "installedVersion": "7.8.38",
+      "fixedVersion": "7.8.40",
+      "cvssScore": 9.1,
+      "severity": "CRITICAL",
+      "description": "Unauthenticated privilege escalation permits root-level command execution."
+    },
+    {
+      "cveId": "CVE-2025-25400",
+      "packageName": "bash",
+      "installedVersion": "7.16.17",
+      "fixedVersion": "7.16.20",
+      "cvssScore": 8.3,
+      "severity": "HIGH",
+      "description": "SQL injection in a legacy query path allows data exfiltration."
+    },
+    {
+      "cveId": "CVE-2025-40912",
+      "packageName": "coreutils",
+      "installedVersion": "3.16.40",
+      "fixedVersion": "3.16.42",
+      "cvssScore": 8,
+      "severity": "HIGH",
+      "description": "SQL injection in a legacy query path allows data exfiltration."
+    },
+    {
+      "cveId": "CVE-2023-51352",
+      "packageName": "pcre2",
+      "installedVersion": "7.18.15",
+      "fixedVersion": "7.18.17",
+      "cvssScore": 5.4,
+      "severity": "MEDIUM",
+      "description": "Insecure default configuration weakens transport-layer protections."
+    }
+  ],
+  "overallSeverity": "CRITICAL",
+  "criticalCount": 5,
+  "highCount": 2,
+  "mediumCount": 1,
+  "lowCount": 0
+}

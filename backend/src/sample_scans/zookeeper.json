@@ -1,0 +1,41 @@
+{
+  "imageName": "zookeeper",
+  "imageTag": "8.5.2",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/zookeeper/zookeeper",
+  "baseOS": "RHEL 9 (UBI9)",
+  "lastScannedAt": "2026-09-15T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2024-38258",
+      "packageName": "libcurl",
+      "installedVersion": "4.9.28",
+      "fixedVersion": "4.9.29",
+      "cvssScore": 5.1,
+      "severity": "MEDIUM",
+      "description": "Insecure default configuration weakens transport-layer protections."
+    },
+    {
+      "cveId": "CVE-2022-45460",
+      "packageName": "tar",
+      "installedVersion": "9.20.40",
+      "fixedVersion": "9.20.45",
+      "cvssScore": 0.9,
+      "severity": "LOW",
+      "description": "Verbose error message may reveal internal path information."
+    },
+    {
+      "cveId": "CVE-2025-31006",
+      "packageName": "nodejs",
+      "installedVersion": "7.4.11",
+      "fixedVersion": "7.4.15",
+      "cvssScore": 0.3,
+      "severity": "LOW",
+      "description": "Deprecated cryptographic primitive still accepted as a fallback."
+    }
+  ],
+  "overallSeverity": "MEDIUM",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 1,
+  "lowCount": 2
+}

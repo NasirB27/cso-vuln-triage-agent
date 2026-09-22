@@ -1,0 +1,32 @@
+{
+  "imageName": "wordpress",
+  "imageTag": "8.5.2",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/wordpress/wordpress",
+  "baseOS": "Alpine 3.19",
+  "lastScannedAt": "2026-09-01T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2025-42610",
+      "packageName": "tar",
+      "installedVersion": "4.6.12",
+      "fixedVersion": "4.6.13",
+      "cvssScore": 8.9,
+      "severity": "HIGH",
+      "description": "Improper certificate validation allows man-in-the-middle interception."
+    },
+    {
+      "cveId": "CVE-2022-48180",
+      "packageName": "busybox",
+      "installedVersion": "2.2.23",
+      "fixedVersion": "2.2.27",
+      "cvssScore": 4.7,
+      "severity": "MEDIUM",
+      "description": "Improper input validation may allow limited data corruption."
+    }
+  ],
+  "overallSeverity": "HIGH",
+  "criticalCount": 0,
+  "highCount": 1,
+  "mediumCount": 1,
+  "lowCount": 0
+}

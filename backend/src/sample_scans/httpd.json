@@ -1,0 +1,23 @@
+{
+  "imageName": "httpd",
+  "imageTag": "8.5.2",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/apache/httpd",
+  "baseOS": "RHEL 9 (UBI9)",
+  "lastScannedAt": "2026-09-03T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2023-13636",
+      "packageName": "requests",
+      "installedVersion": "4.5.14",
+      "fixedVersion": "4.5.18",
+      "cvssScore": 6.7,
+      "severity": "MEDIUM",
+      "description": "Insecure default configuration weakens transport-layer protections."
+    }
+  ],
+  "overallSeverity": "MEDIUM",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 1,
+  "lowCount": 0
+}

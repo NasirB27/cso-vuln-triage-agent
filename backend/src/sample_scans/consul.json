@@ -1,0 +1,32 @@
+{
+  "imageName": "consul",
+  "imageTag": "3.0.0",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/consul/consul",
+  "baseOS": "Debian 12 (bookworm-slim)",
+  "lastScannedAt": "2026-09-17T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2023-13023",
+      "packageName": "ncurses-libs",
+      "installedVersion": "9.9.12",
+      "fixedVersion": null,
+      "cvssScore": 6.6,
+      "severity": "MEDIUM",
+      "description": "Improper input validation may allow limited data corruption."
+    },
+    {
+      "cveId": "CVE-2024-27605",
+      "packageName": "openssl",
+      "installedVersion": "2.10.6",
+      "fixedVersion": "2.10.8",
+      "cvssScore": 1.3,
+      "severity": "LOW",
+      "description": "Non-exploitable crash under unusual, attacker-uncontrolled conditions."
+    }
+  ],
+  "overallSeverity": "MEDIUM",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 1,
+  "lowCount": 1
+}

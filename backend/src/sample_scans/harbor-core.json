@@ -1,0 +1,68 @@
+{
+  "imageName": "harbor-core",
+  "imageTag": "3.0.0",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/harbor/harbor-core",
+  "baseOS": "RHEL 8 (UBI8-minimal)",
+  "lastScannedAt": "2026-09-03T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2023-12526",
+      "packageName": "openssl",
+      "installedVersion": "5.12.16",
+      "fixedVersion": null,
+      "cvssScore": 8.1,
+      "severity": "HIGH",
+      "description": "SQL injection in a legacy query path allows data exfiltration."
+    },
+    {
+      "cveId": "CVE-2022-12327",
+      "packageName": "bash",
+      "installedVersion": "5.13.36",
+      "fixedVersion": "5.13.38",
+      "cvssScore": 6.1,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    },
+    {
+      "cveId": "CVE-2025-48555",
+      "packageName": "zlib",
+      "installedVersion": "4.17.2",
+      "fixedVersion": "4.17.7",
+      "cvssScore": 4.6,
+      "severity": "MEDIUM",
+      "description": "Improper input validation may allow limited data corruption."
+    },
+    {
+      "cveId": "CVE-2022-32621",
+      "packageName": "sqlite",
+      "installedVersion": "1.10.30",
+      "fixedVersion": "1.10.31",
+      "cvssScore": 3.5,
+      "severity": "LOW",
+      "description": "Minor information disclosure with limited practical impact."
+    },
+    {
+      "cveId": "CVE-2024-14008",
+      "packageName": "krb5-libs",
+      "installedVersion": "4.7.19",
+      "fixedVersion": "4.7.22",
+      "cvssScore": 1.2,
+      "severity": "LOW",
+      "description": "Minor information disclosure with limited practical impact."
+    },
+    {
+      "cveId": "CVE-2025-37371",
+      "packageName": "gnutls",
+      "installedVersion": "1.13.37",
+      "fixedVersion": "1.13.39",
+      "cvssScore": 0.9,
+      "severity": "LOW",
+      "description": "Deprecated cryptographic primitive still accepted as a fallback."
+    }
+  ],
+  "overallSeverity": "HIGH",
+  "criticalCount": 0,
+  "highCount": 1,
+  "mediumCount": 2,
+  "lowCount": 3
+}

@@ -1,0 +1,32 @@
+{
+  "imageName": "kong",
+  "imageTag": "1.0.0",
+  "registryPath": "registry1.dso.mil/ironbank/opensource/kong/kong",
+  "baseOS": "Alpine 3.19",
+  "lastScannedAt": "2026-09-10T12:17:14.553Z",
+  "findings": [
+    {
+      "cveId": "CVE-2025-47627",
+      "packageName": "requests",
+      "installedVersion": "1.14.13",
+      "fixedVersion": "1.14.16",
+      "cvssScore": 6.8,
+      "severity": "MEDIUM",
+      "description": "Denial of service via crafted request causes excessive resource consumption."
+    },
+    {
+      "cveId": "CVE-2024-30663",
+      "packageName": "gzip",
+      "installedVersion": "7.12.5",
+      "fixedVersion": "7.12.10",
+      "cvssScore": 2.7,
+      "severity": "LOW",
+      "description": "Verbose error message may reveal internal path information."
+    }
+  ],
+  "overallSeverity": "MEDIUM",
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 1,
+  "lowCount": 1
+}

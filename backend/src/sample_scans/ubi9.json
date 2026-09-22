@@ -1,0 +1,68 @@
+{
+  "imageName": "ubi9",
+  "imageTag": "1.0.0",
+  "registryPath": "registry1.dso.mil/ironbank/redhat/ubi/ubi9",
+  "baseOS": "RHEL 8 (UBI8-minimal)",
+  "lastScannedAt": "2026-09-06T12:17:14.552Z",
+  "findings": [
+    {
+      "cveId": "CVE-2025-47479",
+      "packageName": "tar",
+      "installedVersion": "4.14.25",
+      "fixedVersion": null,
+      "cvssScore": 9.4,
+      "severity": "CRITICAL",
+      "description": "Deserialization of untrusted data leads to arbitrary code execution."
+    },
+    {
+      "cveId": "CVE-2022-10878",
+      "packageName": "urllib3",
+      "installedVersion": "7.12.39",
+      "fixedVersion": "7.12.41",
+      "cvssScore": 5.9,
+      "severity": "MEDIUM",
+      "description": "Insecure default configuration weakens transport-layer protections."
+    },
+    {
+      "cveId": "CVE-2025-48543",
+      "packageName": "urllib3",
+      "installedVersion": "2.1.22",
+      "fixedVersion": "2.1.27",
+      "cvssScore": 5.1,
+      "severity": "MEDIUM",
+      "description": "Information disclosure of internal memory contents under specific conditions."
+    },
+    {
+      "cveId": "CVE-2022-50366",
+      "packageName": "gnutls",
+      "installedVersion": "6.5.18",
+      "fixedVersion": "6.5.19",
+      "cvssScore": 4.9,
+      "severity": "MEDIUM",
+      "description": "Insecure default configuration weakens transport-layer protections."
+    },
+    {
+      "cveId": "CVE-2023-50661",
+      "packageName": "systemd-libs",
+      "installedVersion": "5.1.16",
+      "fixedVersion": "5.1.20",
+      "cvssScore": 4.4,
+      "severity": "MEDIUM",
+      "description": "Improper input validation may allow limited data corruption."
+    },
+    {
+      "cveId": "CVE-2022-24194",
+      "packageName": "urllib3",
+      "installedVersion": "7.20.2",
+      "fixedVersion": "7.20.5",
+      "cvssScore": 4.3,
+      "severity": "MEDIUM",
+      "description": "Denial of service via crafted request causes excessive resource consumption."
+    }
+  ],
+  "overallSeverity": "CRITICAL",
+  "criticalCount": 1,
+  "highCount": 0,
+  "mediumCount": 5,
+  "lowCount": 0
+}
