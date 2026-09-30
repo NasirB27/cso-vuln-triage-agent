@@ -41,7 +41,7 @@ export function reduceDocs(
         existingIds.add(itemId);
       } else if (typeof item === 'object') {
         const metadata = (item as Document).metadata ?? {};
-        let itemId = metadata.uuid ?? uuidv4();
+        const itemId = metadata.uuid ?? uuidv4();
 
         if (!existingIds.has(itemId)) {
           if ('pageContent' in item) {
