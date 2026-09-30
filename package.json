@@ -2,6 +2,7 @@
     "name": "cso-vuln-triage-agent",
     "description": "LangGraph agent that ranks hardened container images by vulnerability severity for CSO triage. Forked from ai-pdf-chatbot-langchain.",
     "private": true,
+    "packageManager": "yarn@1.22.22",
     "version": "0.0.1",
     "author": "Terry Bates",
     "license": "MIT",
@@ -13,6 +14,7 @@
       "build": "yarn run turbo:command build",
       "turbo:command": "yarn turbo",
       "lint": "yarn run turbo:command lint",
+      "lint:all": "yarn lint",
       "lint:fix": "yarn run turbo:command lint:fix", 
       "format": "yarn run turbo:command format",
       "format:check": "yarn run turbo:command format:check"
