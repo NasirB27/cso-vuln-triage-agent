@@ -74,7 +74,7 @@ export class LangGraphBase {
   /**
    * Gets the history of a thread's states
    */
-  async getThreadHistory(threadId: string, limit: number = 10) {
+  async getThreadHistory(threadId: string, limit = 10) {
     return this.client.threads.getHistory(threadId, { limit });
   }
 
