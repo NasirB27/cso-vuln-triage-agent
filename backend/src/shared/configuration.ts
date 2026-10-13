@@ -5,6 +5,28 @@
 import { Annotation } from '@langchain/langgraph';
 import { RunnableConfig } from '@langchain/core/runnables';
 
+export const RETRIEVER_PROVIDERS = ['supabase', 'pgvector'] as const;
+export type RetrieverProvider = (typeof RETRIEVER_PROVIDERS)[number];
+
+/**
+ * Resolves the vector store provider: an explicit per-run value wins, then the
+ * RETRIEVER_PROVIDER environment variable (how the AWS deployment selects
+ * 'pgvector'), then 'supabase'. Unknown values throw instead of silently
+ * falling back, so a typo can't point the agent at the wrong store.
+ */
+export function resolveRetrieverProvider(
+  configured?: string,
+  env: NodeJS.ProcessEnv = process.env,
+): RetrieverProvider {
+  const value = configured || env.RETRIEVER_PROVIDER || 'supabase';
+  if (!(RETRIEVER_PROVIDERS as readonly string[]).includes(value)) {
+    throw new Error(
+      `Unsupported retriever provider: ${value}. Expected one of: ${RETRIEVER_PROVIDERS.join(', ')}`,
+    );
+  }
+  return value as RetrieverProvider;
+}
+
 /**
  * typeof ConfigurationAnnotation.State class for indexing and retrieval operations.
  *
@@ -15,9 +37,10 @@ import { RunnableConfig } from '@langchain/core/runnables';
 export const BaseConfigurationAnnotation = Annotation.Root({
   /**
    * The vector store provider to use for retrieval.
-   * Options are 'supabase', but you can add more providers here and create their own retriever functions
+   * Options are 'supabase' and 'pgvector' (RDS/Aurora PostgreSQL on AWS); add more providers here
+   * and create their own retriever functions.
    */
-  retrieverProvider: Annotation<'supabase'>,
+  retrieverProvider: Annotation<RetrieverProvider>,
 
   /**
    * Additional keyword arguments to pass to the search function of the retriever for filtering.
@@ -44,7 +67,7 @@ export function ensureBaseConfiguration(
     typeof BaseConfigurationAnnotation.State
   >;
   return {
-    retrieverProvider: configurable.retrieverProvider || 'supabase',
+    retrieverProvider: resolveRetrieverProvider(configurable.retrieverProvider),
     filterKwargs: configurable.filterKwargs || {},
     k: configurable.k || 5,
   };

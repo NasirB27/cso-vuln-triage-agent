@@ -22,9 +22,13 @@
     "lint:fix": "eslint src --fix",
     "lint:langgraph-json": "node scripts/checkLanggraphPaths.js",
     "lint:all": "yarn lint & yarn lint:langgraph-json",
-    "langgraph:dev": "npx @langchain/langgraph-cli dev"
+    "langgraph:dev": "npx @langchain/langgraph-cli dev",
+    "langgraph:serve": "npx @langchain/langgraph-cli dev --host 0.0.0.0 --no-browser",
+    "migrate:pgvector": "tsx src/scripts/migrate_pgvector.ts",
+    "ingest:run": "tsx src/scripts/run_ingestion.ts"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.1151.0",
     "@langchain/community": "^0.3.26",
     "@langchain/core": "^0.3.32",
     "@langchain/langgraph": "^0.2.41",
@@ -35,6 +39,7 @@
     "@supabase/supabase-js": "^2.48.1",
     "chromadb": "^1.10.4",
     "pdf-parse": "^1.1.1",
+    "pg": "^8.23.1",
     "uuid": "^11.0.5",
     "ws": "^8.18.0",
     "zod": "^3.24.1"
@@ -46,6 +51,7 @@
     "@tsconfig/recommended": "^1.0.7",
     "@types/jest": "^29.5.0",
     "@types/node": "^22.10.6",
+    "@types/pg": "^8.23.1",
     "@typescript-eslint/eslint-plugin": "5.59.8",
     "@typescript-eslint/parser": "5.59.8",
     "cross-env": "^7.0.3",

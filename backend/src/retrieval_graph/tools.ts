@@ -138,7 +138,7 @@ export async function getCandidateScanDocuments(
   config: RunnableConfig,
 ): Promise<Document[]> {
   try {
-    return await fetchAllScanDocuments();
+    return await fetchAllScanDocuments(config);
   } catch (directReadError) {
     try {
       const retriever = await makeRetriever(config);

@@ -1,0 +1,23 @@
+# Copy to terraform.tfvars (git-ignored) and fill in. Never commit real values.
+
+region = "us-east-1"
+
+# Required. Your own public IP(s), e.g. ["203.0.113.7/32"]. 0.0.0.0/0 is rejected.
+allowed_ingress_cidrs = ["203.0.113.7/32"]
+
+# Images pushed to the ECR repos this config creates (see infra/README.md).
+backend_image  = "123456789012.dkr.ecr.us-east-1.amazonaws.com/cso-triage-backend:0.1.0"
+frontend_image = "123456789012.dkr.ecr.us-east-1.amazonaws.com/cso-triage-frontend:0.1.0"
+
+# Pass secrets via the environment instead of this file:
+#   export TF_VAR_openai_api_key=...
+#   export TF_VAR_langchain_api_key=...
+
+# Recommended once you have a domain:
+# acm_certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/..."
+
+# Match how you built the images (linux/amd64 -> X86_64).
+# cpu_architecture = "X86_64"
+
+# Turn on after uploading scan JSON to s3://<scans_bucket>/scans/
+# ingestion_enabled = true

@@ -5,8 +5,12 @@ try {
   // ignore error
 }
 
+import { fileURLToPath } from 'node:url'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Self-contained server bundle (.next/standalone) for the container image.
+  output: 'standalone',
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -17,6 +21,8 @@ const nextConfig = {
     unoptimized: true,
   },
   experimental: {
+    // Yarn workspaces hoist node_modules to the repo root, so trace from there.
+    outputFileTracingRoot: fileURLToPath(new URL('..', import.meta.url)),
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,

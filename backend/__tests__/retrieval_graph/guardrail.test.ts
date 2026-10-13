@@ -78,6 +78,28 @@ describe('executeTool guardrail', () => {
     expect(routeAfterTool(nextState)).toBe(END);
   });
 
+  it('gives the same honest failure message when the pgvector database is unreachable', async () => {
+    const savedHost = process.env.PGHOST;
+    const savedUrl = process.env.DATABASE_URL;
+    delete process.env.PGHOST;
+    delete process.env.DATABASE_URL;
+
+    try {
+      const update = await executeTool(stateWithPendingToolCall(), {
+        configurable: { retrieverProvider: 'pgvector' },
+      });
+
+      const [message] = update.messages as AIMessage[];
+      expect(message).toBeInstanceOf(AIMessage);
+      expect(String(message.content).toLowerCase()).toContain("couldn't retrieve");
+      expect(String(message.content)).not.toMatch(/CVE-\d{4}-\d+/);
+      expect(update.toolCallCount).toBe(1);
+    } finally {
+      if (savedHost !== undefined) process.env.PGHOST = savedHost;
+      if (savedUrl !== undefined) process.env.DATABASE_URL = savedUrl;
+    }
+  });
+
   it('throws if invoked without a pending tool call (programmer error, not a runtime guardrail case)', async () => {
     const state = {
       query: 'hi',

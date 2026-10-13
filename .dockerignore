@@ -1,2 +1,17 @@
 node_modules
+**/node_modules
 dist
+.git
+**/.next
+**/coverage
+**/.turbo
+
+# Never bake local secrets into an image. (.env.example files are kept.)
+**/.env
+**/.env.*
+!**/.env.example
+
+# Terraform state and provider caches
+infra/terraform/.terraform
+infra/terraform/*.tfstate*
+infra/terraform/*.tfvars

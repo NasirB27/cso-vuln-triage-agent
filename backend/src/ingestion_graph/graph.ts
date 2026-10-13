@@ -11,7 +11,8 @@ import fs from 'fs/promises';
 import path from 'path';
 
 import { IndexStateAnnotation, assertScanMetadata, Severity } from './state.js';
-import { makeRetriever } from '../shared/retrieval.js';
+import { deleteExistingScanRows, makeRetriever } from '../shared/retrieval.js';
+import { getPostgresPool } from '../shared/postgres.js';
 import {
   ensureIndexConfiguration,
   IndexConfigurationAnnotation,
@@ -134,6 +135,10 @@ async function ingestDocs(
   }
 
   const retriever = await makeRetriever(config);
+  if (configuration.retrieverProvider === 'pgvector') {
+    // Scheduled ingestion re-reads the same scan drops; replace, don't duplicate.
+    await deleteExistingScanRows(getPostgresPool(), docs);
+  }
   await retriever.addDocuments(docs);
 
   return { docs: 'delete' };

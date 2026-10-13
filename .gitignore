@@ -49,3 +49,11 @@ apps/docs/public/registry/
 llm_context/
 
 .swc
+
+# terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
