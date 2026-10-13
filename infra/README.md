@@ -86,12 +86,26 @@ If you change `private_namespace`, rebuild the frontend with the matching
 ## Verification status
 
 Validated locally: `tofu fmt -check` (syntax and formatting only), the backend
-code and tests, the frontend standalone build, the migration SQL and
-replace-on-reingest SQL against a real PostgreSQL 16 (without the `vector`
-extension, which was unavailable).
+code (`yarn tsc --noEmit`) and tests (`yarn jest`, 41 passing), and the frontend
+standalone build.
 
-Not validated: `terraform validate`/`plan`/`apply` (provider schema could not be
-downloaded in the build environment), the Docker images (no Docker daemon), and
-the pgvector extension DDL (`vector(1536)` column and HNSW index). Run
-`terraform init && terraform validate` and commit `.terraform.lock.hcl`
-before relying on this.
+Validated against a local PostgreSQL 16 with pgvector 0.6.0 (Ubuntu package;
+Docker was unavailable): `yarn migrate:pgvector` applies
+`backend/sql/001_init_documents.sql` cleanly, producing the `vector(1536)`
+column, the HNSW cosine index, the GIN index and the btree expression index.
+Re-running `deleteExistingScanRows` + `addDocuments` (with a fake embedder, not
+OpenAI) leaves exactly one row per `(imageName, imageTag)`.
+
+Not validated:
+- `terraform init`/`validate`/`plan`: the HashiCorp registry and binary host
+  returned 403 from the build environment, so provider schema was never
+  checked and `.terraform.lock.hcl` has not been generated. Run
+  `terraform init && terraform validate` locally, then
+  `terraform providers lock -platform=linux_amd64 -platform=linux_arm64 -platform=darwin_arm64 -platform=darwin_amd64`
+  and commit the lock file.
+- Docker images: Docker Hub returned 403, so neither image was built or run
+  (backend `/info` on 2024 and frontend `/` on 3000 remain unchecked).
+- RDS: `CREATE EXTENSION vector` as the RDS master user was not run against a
+  real instance. HNSW needs pgvector 0.5.0 or later; `engine_version = "16"` in
+  `data.tf` floats to the current 16.x minor, but the exact pgvector version
+  shipped per RDS 16.x minor was not confirmed.
